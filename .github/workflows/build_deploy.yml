@@ -25,6 +25,9 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
         folder: build
+        #token: ${{ secrets.ACCESS_TOKEN }}
+      permissions:
+        contents: write        
       #env:
         #ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         #BRANCH: gh-pages
