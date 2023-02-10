@@ -25,11 +25,12 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
         folder: build
-        #token: ${{ secrets.ACCESS_TOKEN }}
-      permissions:
-        contents: write        
+        #token: ${{ secrets.ACCESS_TOKEN }}       
       #env:
         #ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         #BRANCH: gh-pages
         #FOLDER: build
         #BUILD_SCRIPT: npm install && npm run build
+
+permissions:
+  contents: write         
